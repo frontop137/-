@@ -8,12 +8,12 @@ classroomid = '4449749'
 sign = '7GmGPsM8ci5'
 term = 'latest'
 universityid = '2627'
+cookie = ""
 
 
 headers1 = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.'
                          '0.4240.111 Safari/537.36',
-           'cookie': 'university_id=%s; platform_id=3; csrftoken=kE3ZZt7jhRXLSj6MLaZ4sKGij9xzhGWL; '
-                     'sessionid=8hq1r4gizkk3xj8xel469g0v0bagh7y5; user_role=3' % universityid,
+           'cookie': '',
            'referer': 'https://scut.yuketang.cn/pro/lms/7GmGPsM8ci5/%s/studycontent' % classroomid,
            'university-id': universityid,
            'xtbz': 'cloud'
@@ -69,8 +69,7 @@ for id in video_id:
     print('正在观看视频id：', id)
     headers2 = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
                              '(KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
-               'cookie': 'university_id=%s; platform_id=3; csrftoken=kE3ZZt7jhRXLSj6MLaZ4sKGij9xzhGWL; '
-                         'sessionid=8hq1r4gizkk3xj8xel469g0v0bagh7y5; user_role=3' % universityid,
+               'cookie': '',
                'origin': 'https://scut.yuketang.cn',
                'referer': video_url[video_id.index(id)],
                'xtbz': 'cloud',
